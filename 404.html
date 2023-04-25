@@ -35,11 +35,12 @@
             .slice(0, 1 + pathSegmentsToKeep)
             .join('/') +
           // '/?/' +  - или это для фильтров вмето предидущей строчки
-          l.pathname
-            .slice(1)
-            .split('/')
-            .slice(0, 1 + pathSegmentsToKeep)
-            .join('/') +
+//           l.pathname
+//             .slice(1)
+//             .split('/')
+//             .slice(0, 1 + pathSegmentsToKeep)
+//             .join('/') 
+        +
           // .replace(/&/g, '~and~')
           (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
           l.hash
