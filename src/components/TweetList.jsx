@@ -135,7 +135,7 @@ export default function TweetList() {
           borderRadius: '6px',
         }}
         color="#EBD8FF"
-        href="/react-tweets-test-task"
+        href="/"
       >
         <HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
         HOME
