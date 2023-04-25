@@ -66,9 +66,13 @@ export default function TweetList() {
   const totalPages = useSelector(selectTotalPages);
 
   useEffect(() => {
-    localStorage.setItem('filter', 'all');
-    dispatch(fetchTotalPages());
-    dispatch(fetchAll(1));
+    if (localStorage.getItem('targetPage') !== '1') {
+      return;
+    } else {
+      localStorage.setItem('filter', 'all');
+      dispatch(fetchTotalPages());
+      dispatch(fetchAll(1));
+    }
   }, [dispatch]);
 
   let targetPage = localStorage.getItem('targetPage');
