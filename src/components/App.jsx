@@ -11,9 +11,9 @@ function App() {
   return (
     <Provider store={store}>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/react-tweets-test-task" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/tweets" element={<Tweets />} />
+          <Route path="/react-tweets-test-task/tweets" element={<Tweets />} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>
