@@ -27,12 +27,12 @@ export const Navigation = () => {
         marginBottom: '30px',
       }}
     >
-      <NavLink style={linkStyle} to="/react-tweets-test-task">
+      <NavLink style={linkStyle} to="/">
         Home
       </NavLink>
       <NavLink
         style={({ isActive }) => (isActive ? linkActiveStyle : linkStyle)}
-        to="/react-tweets-test-task/tweets"
+        to="/tweets"
       >
         Tweets
       </NavLink>
